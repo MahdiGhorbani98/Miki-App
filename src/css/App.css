@@ -1,0 +1,424 @@
+@font-face {
+    font-family: Urwg_EXTRALIGHT;
+    src: url('../fonts/URWGEOMETRICARABIC-EXTRALIGHT.TTF');
+}
+@font-face {
+    font-family: Urwg_HEAVY;
+    src: url('../fonts/URWGEOMETRICARABIC-HEAVY.TTF');
+}
+@font-face {
+    font-family: Urwg_LIGHT;
+    src: url('../fonts/URWGEOMETRICARABIC-LIGHT.TTF');
+}
+body{
+    background-color: #e8e5dd;
+    color: #2c2b27;
+    /* #8a8882 */
+    font-family: Urwg_EXTRALIGHT;
+    
+}
+a{
+    text-decoration: none;
+}
+.btns{
+    display: flex;   
+}
+.CenterPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btns div{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 17px;
+    font-family: Urwg_LIGHT;
+    color: #2c2b27;
+    margin: 5px;
+    border-radius: 23px;
+    padding: 6px 10px;
+    width: 77px;
+    background-color: transparent;
+}
+
+.empty{
+    border: 3px #8a8882 solid ;
+    transition: 0.3s;
+}
+.empty:hover{
+    background-color: #2c2b27  ;
+    color: #e8e5dd;
+    border: 3px #2c2b27 solid ;
+}
+.fullbtn{
+    border: 3px #2c2b27 solid ;
+    background-color: #2c2b27 !important;
+    color: #e8e5dd !important;
+    transition: 0.3s;
+}
+.fullbtn:hover{
+    border: 3px #8a8882 solid ;
+    background-color: transparent !important;
+    color: #2c2b27 !important;
+}
+
+.premium{
+    pointer-events: none;
+    margin-bottom:3px;
+    margin-top:160px;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: 'Urwg_LIGHT';
+}
+.half{
+    pointer-events: none;
+    font-weight: bold;
+    border-bottom: 3.5px solid #2c2b27;
+    
+}
+.here{
+    /* margin-bottom:5px;
+    margin-top:180px; */
+    font-size: 35px;
+    font-weight: 500;
+    font-family: 'Urwg_LIGHT';
+}
+
+.why{
+    font-family: Urwg_HEAVY;
+    font-weight: bold;    
+}
+
+.antIcon{
+    pointer-events: none;
+    transform: scale(1.5);
+}
+.antIcon2{
+    transform: scaleY(1.5);
+}
+
+.intro{
+    margin: 50px;
+}
+
+.blackback{
+    background-color: #2c2b27;
+    color: #e8e5dd;
+    padding: 0px 5px;
+}
+
+.rectL{
+    transform: scale(0.98);
+}
+
+.svgs{
+    position: relative;
+
+    display: flex;
+    margin: 190px auto 40px auto;
+    pointer-events: none;
+}
+
+.svg{
+    width: 105px;
+    margin: 0 3px;
+}
+.svgbold{
+    width: 105px;
+    margin: 3px 3px;
+    position: absolute;
+    transform: scaleY(-1);
+
+}
+
+.svgbold2{
+    width: 105px;
+    margin: 0px 3px;
+    position: absolute;
+    left: 111px;
+}
+.svgbold3{
+    width: 105px;
+    margin: 0px 3px;
+    position: absolute;
+    left: 222px;
+    /* transform: scaleY(-1); */
+}
+
+.svgbold4{
+    width: 105px;
+    margin: 3px 3px;
+    position: absolute;
+    left: 333px;
+    /* transform: scaleY(-1); */
+}
+
+.cls-1
+{
+    stroke:#2c2b27;stroke-width:3px;opacity:0.5;
+}
+
+.cls-2
+{
+    stroke:#8a8882;stroke-width:10px;
+}
+
+
+.cls-1,.cls-2
+{
+    fill:none;stroke-miterlimit:10;
+}
+
+
+.cls-1o,.cls-2o
+{
+    fill:none;stroke:#2c2b27;stroke-miterlimit:10;
+}
+.cls-1o
+{
+    stroke-width:3px;opacity:0.5;
+}
+.cls-2o
+{
+    stroke-width:10px;
+}
+
+
+.cls-1nb
+{
+    fill:none;
+    stroke:#2c2b27;
+    stroke-miterlimit:10;
+    stroke-width:10px;
+}
+
+.cls-1-empty
+{
+    fill:none;
+    stroke:#2c2b27;
+    stroke-miterlimit:10;
+    stroke-width:10px;
+}
+.cls-1-empty3
+{
+    fill:none;
+    stroke:#2c2b27;
+    stroke-miterlimit:10;
+    stroke-width:10px;
+}
+.greyLine
+{
+    transform-origin: center;
+    fill:none;
+    stroke:#8a8882;
+    /* stroke-miterlimit:3px; */
+    stroke-width:3px;
+}
+
+.svgO{
+    border: 0.1px rgba(255, 0, 0, 0) solid;
+    border-radius: 70px;
+}
+
+.cls-1ll,.cls-2ll{
+    fill:none;
+    stroke:#8a8882;
+    stroke-miterlimit:10;
+}
+.cls-1ll{
+    stroke-width:3px;
+}
+.cls-2ll{
+    stroke-width:10px;
+}
+
+
+
+
+@media(max-width : 475px){
+    .btns div{
+        font-size: 14px;
+        margin: 3px;
+        width: 60px;
+    }
+    .premium{
+        margin-top:120px;
+        font-size: 25px;
+        font-weight: 500;
+        font-family: 'Urwg_LIGHT';
+    }
+    .intro p{
+        font-size: 25px;
+    }
+    .svgs{
+        margin: 160px 0 35px 0;
+    }
+    .svg{
+        width: 85px;
+    }
+    .svgbold{
+        width: 85px;
+        margin: 3px 3px;
+    }
+    .svgbold2{
+        width: 85px;
+        margin: 0px 3px;
+        left: 91px;
+    }
+    .svgbold3{
+        width: 85px;
+        margin: 0px 3px;
+        left: 182px;
+    }
+    
+    .svgbold4{
+        width: 85px;
+        margin: 3px 3px;
+        position: absolute;
+        left: 273px;
+        /* transform: scaleY(-1); */
+    }
+    
+}
+
+@media(max-width : 426px){
+    .btns div{
+        font-size: 13px;
+        margin: 3px;
+        width: 58px;
+    }
+    .premium{
+        margin-top:150px;
+        font-size: 20px;
+
+    }
+    .intro{
+        margin: 25px;
+    }
+    .intro p{
+        font-size: 20px;
+    }
+    .svgs{
+        margin: 160px 0 35px 0;
+    }
+    .svg{
+        width: 85px;
+    }
+    .svgbold{
+        width: 85px;
+        margin: 3px 3px;
+    }
+    .svgbold2{
+        width: 85px;
+        margin: 0px 3px;
+        left: 91px;
+    }
+    .svgbold3{
+        width: 85px;
+        margin: 0px 3px;
+        left: 182px;
+    }
+    
+    .svgbold4{
+        width: 85px;
+        margin: 3px 3px;
+        position: absolute;
+        left: 273px;
+        /* transform: scaleY(-1); */
+    }
+}
+
+@media(max-width : 376px){
+    .btns div{
+        font-size: 11px;
+        margin: 2px;
+        width: 50px;
+    }
+    .premium{
+        margin-top:150px;
+        font-size: 20px;
+
+    }
+    .intro{
+        margin: 15px;
+    }
+    .intro p{
+        font-size: 20px;
+    }
+    .svgs{
+        margin: 160px 0 35px 0;
+    }
+    .svg{
+        width: 75px;
+    }
+    .svgbold{
+        width: 75px;
+        margin: 3px 3px;
+    }
+    .svgbold2{
+        width: 75px;
+        margin: 0px 3px;
+        left: 81px;
+    }
+    .svgbold3{
+        width: 75px;
+        margin: 0px 3px;
+        left: 162px;
+    }
+    
+    .svgbold4{
+        width: 75px;
+        margin: 3px 3px;
+        position: absolute;
+        left: 243px;
+    }
+}
+
+@media(max-width : 330px){
+
+    .btns div{
+        font-size: 9px;
+        margin: 2px;
+        width: 40px;
+    }
+    .premium{
+        margin-top:150px;
+        font-size: 20px;
+
+    }
+    .intro{
+        margin: 15px;
+    }
+    .intro p{
+        font-size: 20px;
+    }
+    .svgs{
+        margin: 160px 0 35px 0;
+    }
+    .svg{
+        width: 65px;
+    }
+    .svgbold{
+        width: 65px;
+        margin: 2px 3px;
+    }
+    .svgbold2{
+        width: 65px;
+        margin: 0px 3px;
+        left: 71px;
+    }
+    .svgbold3{
+        width: 65px;
+        margin: 0px 3px;
+        left: 142px;
+    }
+    
+    .svgbold4{
+        width: 65px;
+        margin: 3px 3px;
+
+    }
+}
